@@ -14,9 +14,11 @@ function verificar() {
             testecompleto=true;
         } else {
             alert('Por favor, preencha todas as respostas!')
+            testecompleto=false;
             break;
         }
     }
+
 if (testecompleto){
     if(resultado<=10){
         alert ('Só '+ resultado+' pontos, dev!!! Você precisa reprogramar sua vida já!!! Você quer realmente chegar numa vida.lenght>70?');
@@ -29,6 +31,7 @@ if (testecompleto){
     } else {
         alert(resultado+' pontos, dev!!! Parabéns! Corpo sano, mente sana (Corpo são, mente sã). Porque já basta JavaScript pra tirar nossa sanidade, não é mesmo?')
     
-    }
-} 
+    }    
+}
+document.querySelector('#perguntas').reset();
 }
